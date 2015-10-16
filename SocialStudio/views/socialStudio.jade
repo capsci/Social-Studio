@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		title= title
+		link(rel = 'stylesheet', href='stylesheets/bootstrap.min.css')
+		link(rel = 'stylesheet', href='stylesheets/bootstrap-theme.min.css')
+		link(rel='stylesheet', href='/stylesheets/socialFeed.css')
+		script(src='/javascripts/jquery.min.js')
+		script(src='/socket.io/socket.io.js')
+		script(src='/javascripts/selector.js')
+		script(src='/javascripts/audioCommands.js')
+		script(src='/javascripts/client.socket.io.js')
+		block scripts
+	body
+		div
+			input#command
+			button#synthesize Synthesize
+		div#social_studio_header Social Studio Header
+		div#social_console
+			<!-- frame for facebook feeds -->
+			span.social_feed#facebook
+				span.social_feed_header Facebook
+				span.social_feed_content Content Content
+			<!-- frame for twitter feeds -->
+			span.social_feed#twitter
+				span.social_feed_header Twitter
+				span.social_feed_content#twitter_feed_content
+			<!-- frame for instagram feeds -->
+			span.social_feed
+				span.social_feed_header Instagram
+				span.social_feed_content Content Content

@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Speech Test</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var recognition = new webkitSpeechRecognition();
+			console.log(recognition);
+			recognition.continuous = true;
+			recognition.onresult = function(event) {
+				console.log(event);
+			}
+		</script>
+		<h1>Hello World</h1>
+	</body>
+</html>

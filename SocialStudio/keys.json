@@ -1,0 +1,8 @@
+{
+	'twitter': {
+		'customer_secret': 'CS'
+	}
+	'facebook': {
+		'pass': 'password'
+	}
+}

@@ -1,0 +1,109 @@
+
+#social_studio_header {
+	margin : 20px 20px 20px 20px;
+	padding : 20px 20px 20px 20px;
+	height: 30px;
+	border: 3px solid #FFA500;
+	background-color: #FFA500;
+	text-align: center;
+	border-radius: 40px;
+}
+
+#social_console {
+	margin: 20px 20px 20px 20px;
+	border: 3px solid #ff3399;
+	height: 600px;
+	text-align: left;
+}
+
+.social_feed {
+	color: #ff0000;
+	border: 2px solid #000000;
+	height: 91%;
+/*	margin: 10px 10px 10px 10px;*/
+	padding: 10px 10px 10px 10px;
+	width: 29%;
+	display: inline-block;
+	margin: 20px 20px 20px 20px;
+	text-align: right;
+	border-radius: 15px;
+	overflow: scroll;
+}
+
+.social_feed_header {
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #ff0000;
+	height: 5%;
+}
+
+p {
+	color: #ff0000;
+}
+
+/*Twitter*/
+
+.social_feed_content
+{
+	width: 90%;
+	border: 1px solid #ff0000;
+	overflow-x: scroll;  
+	height: 400px;
+}
+
+.new-tweet {
+	display: table;
+	border: 1px solid #000000;
+	width: 95%;
+	height: 10%;
+	padding: 4px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+.avatar {
+	vertical-align: centre;
+}
+
+.avatar img {
+		border-radius: 20px;
+}
+
+.bubble-container {
+	float: left;
+	width: 79%;
+	overflow: hidden;
+}
+
+.selectedPost {
+	background-color: #CFCFCF;
+}
+
+.selectedFeed {
+	box-shadow: -10px -10px 3px #888888;
+}
+
+.retweetPost {
+	background-color: #FFCFCF;
+}
+
+.operation {
+	border: 1px solid #000000;
+	border-radius: 3px;
+}
+
+screen_name {
+	color: #5EA9DD;
+	display: block;
+	text-align: left;
+}
+
+tweet_text {
+	color: #111111;
+	display: block;
+	text-align: left;
+}
+
+v {
+	display: none;
+}

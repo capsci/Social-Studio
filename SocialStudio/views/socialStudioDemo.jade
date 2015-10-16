@@ -1,0 +1,154 @@
+doctype html
+html
+	head
+		title= title
+		link(rel = 'stylesheet', href='stylesheets/bootstrap.min.css')
+		link(rel = 'stylesheet', href='stylesheets/bootstrap-theme.min.css')
+		link(rel='stylesheet', href='/stylesheets/socialFeed.css')
+		link(rel='stylesheet', href='/stylesheets/socialFeedGestures.css')
+		script(src='/javascripts/jquery.min.js')
+		script(src='/socket.io/socket.io.js')
+		script(src='/javascripts/selector.js')
+		script(src='/javascripts/audioCommands.js')
+		script(src='/javascripts/gesturesDemo.js')
+		//script(src='/javascripts/client.socket.io.js')
+		block scripts
+	body
+		span#videoFeedButton.inputEnabler Gestures
+		span#audioFeedButton.inputEnabler Voice
+		div#social_studio_header Social Studio Header
+		div#social_console
+			<!-- frame for facebook feeds -->
+			span.social_feed#facebook
+				span.social_feed_header Facebook
+				span.social_feed_content#facebook_feed_content
+					facebook_id.new-fb
+					span.avatar
+						img(src="http://pbs.twimg.com/profile_images/593847362897858560/9lj5pVt9_normal.jpg")
+					span.bubble-container
+							div.tweet
+								screen_name User Name
+								tweet_text Post of my facebook wall
+			<!-- frame for twitter feeds -->
+			span.social_feed#twitter
+				span.social_feed_header Twitter
+				span.social_feed_content#twitter_feed_content
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/593847362897858560/9lj5pVt9_normal.jpg")
+						span.bubble-container
+							div.tweet
+								screen_name @trqzyd
+								tweet_text RT @FreakkHaa: So i love you
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/583413880375742464/vfSg3A5O_normal.png")
+						span.bubble-container
+							div.tweet
+								screen_name @Rather_Dashing
+								tweet_text @st0rmhusky @BiggestLittleFC @HornetV2 would LOVE that XD
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/593463756816052224/c5_BjlTN_normal.jpg")
+						span.bubble-container
+							div.tweet
+								screen_name @angelhearthes
+								tweet_text @Harry_Styles Thank you for the respect &amp; kindness you always spread. You deserve all the love. Please take 3 seconds to follow me?♡ 64,639
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/592150814069792769/YcvC_Gon_normal.png")
+						span.bubble-container
+							div.tweet
+								screen_name @zaynvadiou
+								tweet_text Hey @James_Yammouni i love you Please, make me happy Follow me Is my dream ♥ #DoraAteTheMonkey 7
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/547091601105772545/QwbouYaF_normal.png")
+						span.bubble-container
+							div.tweet
+								screen_name @namedotcom
+								tweet_text RT this if you love domain happy hours! Then see how you can save like crazy here: http://t.co/UIyawGMgR9
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://abs.twimg.com/sticky/default_profile_images/default_profile_1_normal.png")
+						span.bubble-container
+							div.tweet
+								screen_name @eykaan
+								tweet_text RT @JosheyOfficPriv: Let's play a game RT if you love @PrivtOneD :)
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/570323291357728768/yKPucqaH_normal.png")
+						span.bubble-container
+							div.tweet
+								screen_name @EpicBookLaunch2
+								tweet_text Author Ami DeJong is now sharing more of about the path of love at http://t.co/a0NvuG3PhM #journey
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/591716959768612864/B4maesnA_normal.jpg")
+						span.bubble-container
+							div.tweet
+								screen_name @asyellosombrero
+								tweet_text RT @KIDSoCharming_: I hate people that can't be straight up
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/552450535744233472/8kjABumW_normal.png")
+						span.bubble-container
+							div.tweet
+								screen_name @gemmaspetpics
+								tweet_text @_NutritionAngel @sugarnelly neither will my pizza and ice cream tonight ;) but I do love nutrition most of the time! #TwitterSisters
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/593850386311700480/SRtMQzpj_normal.jpg")
+						span.bubble-container
+							div.tweet
+								screen_name @DINAHMALIClA
+								tweet_text @arianafordemi sdv? e da RT aqui? é muito importante! obrigada 🌈 https://t.co/bMiGGBQinA
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/587258745509584896/PSeGZDEx_normal.jpg")
+						span.bubble-container
+							div.tweet
+								screen_name @praisetswift
+								tweet_text What's your dream job? — i would love to be a motorsport engineer bc i would get to travel the world doing it http://t.co/S75nb5UbHN
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/552296193858875392/TKdFE2Ox_normal.jpeg")
+						span.bubble-container
+							div.tweet
+								screen_name @pleitez_ale
+								tweet_text RT @zaynmalik: That's fake and I have nothing to do with it so don't waste your money guys ... Love you all and to the people doing this ..…
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/540381206052093952/s8SmMLS8_normal.jpeg")
+						span.bubble-container
+							div.tweet
+								screen_name @CurtisLee317
+								tweet_text I hate Avon traffic
+					tweet_id.new-tweet
+						span.avatar
+							img(src="http://pbs.twimg.com/profile_images/592009341915537409/eqEKDFXS_normal.jpg")
+						span.bubble-container
+							div.tweet
+								screen_name @PoeticJusticee4
+								tweet_text RT @NoHoesLex: Dudes be 5'7" talkin bout "i love short girls😍', stfu you are a short girl
+			<!-- frame for instagram feeds -->
+			span.social_feed
+				span.social_feed_header Instagram
+				span.social_feed_content#instagram_feed_content
+					instagram_id.new-insta
+					span.avatar
+						img(src="http://pbs.twimg.com/profile_images/593847362897858560/9lj5pVt9_normal.jpg")
+					span.bubble-container
+							div.insta
+								screen_name User Name
+								tweet_text Post of my facebook wall
+		div.videoFrame
+			video#videoFeed.videoOutput
+		div.videoFrame
+			canvas#canvasHSVfilter.videoOutput
+			
+		div#movement
+		div
+			input#command
+			button#synthesize Synthesize
+

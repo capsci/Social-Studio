@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		title= title
+		link(rel = 'stylesheet', href='stylesheets/bootstrap.min.css')
+		link(rel = 'stylesheet', href='stylesheets/bootstrap-theme.min.css')
+		link(rel='stylesheet', href='/stylesheets/socialFeedGestures.css')
+		script(src='/javascripts/jquery.min.js')
+		script(src='/javascripts/visualGesturesDemo.js')
+		block scripts
+	body
+		div#social_studio_header Social Studio Header
+		div.videoFrame
+			video#videoFeed.videoOutput
+			span#videoFeedButton.videoEnabler Video
+		div.videoFrame#temp
+			canvas#canvasBinary.videoOutput
+			span#grayScale.videoEnabler Gray Scale
+		div.videoFrame
+			canvas#canvasRGBfilterCalc.videoOutput
+			span#skinFilterRGBCalc.videoEnabler RGB Skin filter calculated value
+		div.videoFrame
+			canvas#canvasRGBfilter.videoOutput
+			span#skinFilterRGB.videoEnabler RGB skin filter
+		div.videoFrame
+			canvas#canvasHSVfilter.videoOutput
+			span#skinFilterHSV.videoEnabler HSV skin filter
+		div.videoFrame
+			canvas#canvasHealing.videoOutput
+			span#frameHeal.videoEnabler Healing
+		div#movement

@@ -1,0 +1,39 @@
+<<html>
+<head>
+	<title>Get User Media</title>
+</head>
+<body>
+	<h4>getUserMedia Demo</h4>
+	<video id='v'></video>
+	<script type="text/javascript">
+		var v = document.getElementById('v');
+		navigator.getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia ||
+									navigator.mozGetUserMedia || navigator.msGetUserMedia);
+		if(navigator.getUserMedia)
+		{
+			console.log('getUserMedia NOT null')
+			navigator.getUserMedia(
+				{
+					video : true,
+					audio : true
+				},
+				function(stream) 
+				{
+					console.log("Stream");
+					var url = window.URL || window.webkitURL;
+					v.src = url ? url.createObjectURL(stream) : stream;
+					v.play();	
+				},
+				function(error) 
+				{
+					console.log("Error");
+				}
+			);
+		}
+		else 
+		{
+			alert("Sorry! Browser doesn't support getUserMedia API");
+		}
+	</script>
+</body>
+</html>
